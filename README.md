@@ -18,7 +18,7 @@ The command refuses to use an output directory that already exists.
 
 Each part ends on a Base64 group boundary, so the parts can be concatenated and decoded as one stream.
 
-On macOS, run `cat INPUT.base64/part-*.b64 | base64 -D > restored-file` to reconstruct the original.
+On macOS, run `cat INPUT.base64/part-*.b64.txt | base64 -D > restored-file` to reconstruct the original.
 
 On Linux, replace `base64 -D` with `base64 -d`.
 

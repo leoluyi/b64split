@@ -193,7 +193,7 @@ func (w *partWriter) Write(data []byte) (int, error) {
 }
 
 func (w *partWriter) openNext() error {
-	name := fmt.Sprintf("part-%04d.b64", len(w.paths)+1)
+	name := fmt.Sprintf("part-%04d.b64.txt", len(w.paths)+1)
 	path := filepath.Join(w.dir, name)
 	file, err := os.OpenFile(path, os.O_WRONLY|os.O_CREATE|os.O_EXCL, 0o644)
 	if err != nil {
