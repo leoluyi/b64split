@@ -1,2 +1,4 @@
 /b64split
 *.base64/
+/bin/
+/dist/
